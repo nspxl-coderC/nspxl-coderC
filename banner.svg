@@ -13,22 +13,16 @@
     .header { fill: #12151c; }
     .border { fill: none; stroke: #21262d; stroke-width: 2; }
     .line { stroke: #1b1f27; stroke-width: 1; }
-    
     .font { font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-    
     .title-bar { fill: #484f58; font-size: 12px; }
     .prompt-user { fill: #ff3e3e; font-size: 15px; font-weight: 600; }
     .prompt-cmd { fill: #c9d1d9; font-size: 15px; }
-    
     .hero { fill: #f0f6fc; font-size: 54px; font-weight: 800; letter-spacing: 1px; }
     .cursor { fill: #ff3e3e; animation: blink 1s step-end infinite; }
-    
     .sub { fill: #8b949e; font-size: 14.5px; }
     .accent { fill: #ff3e3e; font-weight: bold; }
     .highlight { fill: #e6edf3; }
-    
     .status-dot { fill: #3fb950; animation: pulse 2.2s ease-in-out infinite; }
-    
     .marquee-bg { fill: #0d1016; }
     .marquee-track { animation: scroll 22s linear infinite; }
     .marquee-text { fill: #6e7681; font-size: 13px; letter-spacing: 1.5px; }
@@ -49,50 +43,40 @@
   </style>
 
   <g clip-path="url(#window-clip)">
-    <!-- Фон терминала -->
     <rect width="840" height="310" class="bg" />
-    
-    <!-- Верхняя панель окна -->
     <rect width="840" height="36" class="header" />
     <line x1="0" y1="36" x2="840" y2="36" class="line" />
     
-    <!-- Кнопки окна -->
     <circle cx="22" cy="18" r="5.5" fill="#ff5f56" />
     <circle cx="40" cy="18" r="5.5" fill="#ffbd2e" />
     <circle cx="58" cy="18" r="5.5" fill="#27c93f" />
     <text x="420" y="22" text-anchor="middle" class="font title-bar">nsxpl@dev: ~</text>
 
-    <!-- Команда запуска -->
     <text x="38" y="78" class="font">
       <tspan class="prompt-user">nsxpl@dev:~$ </tspan>
       <tspan class="prompt-cmd">./hello.sh</tspan>
     </text>
 
-    <!-- Главный заголовок + мигающий курсор -->
     <text x="38" y="148" class="font hero">hello, nsxpl.</text>
     <rect x="485" y="103" width="16" height="52" class="cursor" />
 
-    <!-- Описание и статус (текст можно менять под себя) -->
     <text x="38" y="196" class="font sub">
-      <tspan class="accent">&gt;</tspan> software developer · backend, bots, automation
+      <tspan class="accent">&gt;</tspan> software developer &#183; backend, bots, automation
     </text>
     
     <circle cx="44" cy="222" r="4.5" class="status-dot" />
     <text x="58" y="227" class="font sub">
-      open for projects · tg <tspan class="highlight">@nsxpl</tspan>
+      open for projects &#183; tg <tspan class="highlight">@oeged</tspan>
     </text>
 
-    <!-- Нижняя бегущая строка -->
     <rect x="0" y="265" width="840" height="45" class="marquee-bg" />
     <line x1="0" y1="265" x2="840" y2="265" class="line" />
 
     <g clip-path="url(#marquee-clip)">
       <g class="marquee-track">
-        <!-- Блок 1 -->
         <text x="0" y="292" class="font marquee-text">
           python <tspan class="sep">//</tspan> c# <tspan class="sep">//</tspan> aiogram <tspan class="sep">//</tspan> fastapi <tspan class="sep">//</tspan> postgresql <tspan class="sep">//</tspan> docker <tspan class="sep">//</tspan> linux <tspan class="sep">//</tspan> automation <tspan class="sep">//</tspan> parsers <tspan class="sep">//</tspan> api <tspan class="sep">//</tspan>
         </text>
-        <!-- Блок 2 (дубликат для бесшовного скролла) -->
         <text x="950" y="292" class="font marquee-text">
           python <tspan class="sep">//</tspan> c# <tspan class="sep">//</tspan> aiogram <tspan class="sep">//</tspan> fastapi <tspan class="sep">//</tspan> postgresql <tspan class="sep">//</tspan> docker <tspan class="sep">//</tspan> linux <tspan class="sep">//</tspan> automation <tspan class="sep">//</tspan> parsers <tspan class="sep">//</tspan> api <tspan class="sep">//</tspan>
         </text>
@@ -100,6 +84,6 @@
     </g>
   </g>
 
-  <!-- Рамка поверх всего -->
   <rect x="1" y="1" width="838" height="308" rx="10" class="border" />
 </svg>
+
