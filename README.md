@@ -1,20 +1,9 @@
-<div align="center">
+![hello, nsxpl.](./banner.svg)
 
-&#x20; <img src="./banner.svg" width="100%" alt="hello, nsxpl." />
-
-</div>
-
-
-
-<br />
-
-
-
-\*\*\[Написать в Telegram](https://t.me/oeged)\*\*
-
-
+**[Написать в Telegram](https://t.me/oeged)**
 
 Разработчик софта, ботов и систем автоматизации. Пишу чистый код, делаю парсеры, интеграции с API и бэкенд-сервисы под ключ.
+
 
 
 
