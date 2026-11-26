@@ -10,7 +10,7 @@
 
 
 
-\*\*\[Написать в Telegram](https://t.me)\*\*
+\*\*\[Написать в Telegram](https://t.me/oeged)\*\*
 
 
 
